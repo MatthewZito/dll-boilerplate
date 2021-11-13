@@ -1,14 +1,14 @@
 {
-  "name": "lib.<project>",
+  "name": "<project>",
   "version": "0.0.1",
   "author": "Matthew Zito (goldmund)",
-  "repo": "MatthewZito/lib.<project>",
+  "repo": "MatthewZito/<project>",
   "license": "MIT",
   "description": "",
   "keywords": [
 
   ],
   "src": [
-    "src/lib<project>.h"
+    "src/<project>.h"
   ]
 }

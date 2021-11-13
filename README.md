@@ -1,29 +1,16 @@
-# lib.<project>
+# <project>
 
 ## Dynamic Linking
 
-Linking to `lib.<project>`:
+Linking to `<project>`:
 
 ```bash
-# 1) include and use lib.<project> in your project
+# 1) include and use <project> in your project
 # 2) generate object file for your project
-gcc -I ../path/to/lib<project> -c main.c -o main.o
+gcc -I ../path/to/<project> -c main.c -o main.o
 # 3) generate shared object file
 make
-# 4) link your project to lib.<project>
-gcc -o main main.o -L../path/to/lib<project> -llib<project>
-# you may need to add the lib location to your PATH
-```
-
-Linking to `lib.<project>` on Windows:
-
-```bash
-# 1) include and use lib.<project> in your project
-# 2) generate object file for your project
-gcc -I ../path/to/lib<project> -c main.c -o main.o
-# 3) generate shared object file
-make win
-# 3) link your project to lib.<project>
-gcc -o main.exe main.o -L /path/to/lib.<project> -llib_<project>.dll
+# 4) link your project to <project>
+gcc -o main main.o -L../path/to/<project> -l<project>
 # you may need to add the lib location to your PATH
 ```

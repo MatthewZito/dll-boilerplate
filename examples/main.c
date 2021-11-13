@@ -1,1 +1,1 @@
-#include "lib<project>"
+#include "<project>"
